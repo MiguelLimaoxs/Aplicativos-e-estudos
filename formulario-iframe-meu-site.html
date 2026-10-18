@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><i>FORMULÁRIO DE TESTE</i></h1>
+    <h4 style="text-align: center; color: red;"><i>Este formulário não será enviado realmente, é apenas um teste!</i></h4>
+    
+    <hr>
+    <form>
+        <label for="Nome">Nome:</label>
+        <input required id="Nome" type="text" placeholder="Insira seu nome:">
+        <br><br>
+        <label for="Email">Email:</label>
+        <input required id="Email" type="email" placeholder="Insira seu email:">
+        <br><br>
+        <label for="Senha">Senha:</label>
+        <input required id="Senha" type="password" placeholder="Insira sua senha:">
+        <hr>
+        <h2 style="text-align: center;">Qual jogo você está mais ansioso?</h2>
+        <label for="GTA6">Grand Theft Auto VI</label>  
+        <input required type="radio" name="Jogo" id="GTA6" value="Grand Theft Auto VI">
+        <br>   
+        <label for="Ocarina">The Legend Zelda Ocarina Of Time remake</label>  
+        <input required type="radio" name="Jogo" id="Ocarina" value="Zelda">
+        <br><br><hr>
+        <h2 style="text-align: center;">Oque te falta para conseguir jogar GTA 6?</h2>
+        <label for="Jogo">O próprio jogo</label>
+        <input type="checkbox" name="O jogo" id="Jogo" value="O principal">
+        <br>
+        <label for="PS5">O PS5</label>
+        <input required type="checkbox" name="Console" id="PS5" value="Videogame">
+        <br>
+        <label for="PS5">Outros</label>
+        <input required type="checkbox" name="Outro" id="Outra" value="Outros...">
+        <hr>
+        <h2 style="text-align: center;">Qual data você está mais ansioso:</h2>
+        <select required>
+            <option disabled selected value="">Selecione uma data</option>
+            <option value="19">19 de Novembro</option>
+            <option value="5">5 de Novembro</option>
+         </select>
+        <hr><br>
+        <h2 style="text-align: center;">Do que você gosta?</h2>
+        <br>
+        <textarea placeholder="Do que você gosta(opcional)" name="Do-que-você-mais-gosta" rows="15" cols="55"></textarea>        
+
+
+         
+        <br><br>
+        <h4 style="color: orange;">Este formulário está em desenvolvimento!</h4>
+        <hr>
+        <input type="submit" value="Enviar formulário teste">
+
+    </form>
+</body>
+</html>
