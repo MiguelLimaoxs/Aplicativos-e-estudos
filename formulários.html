@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <a href="site-para-formulário.html">Voltar para o site</a>
+    <hr><br>
+    <!--Formulário input tipo texto-->
+    <form> # Serve para criar um formulário
+        <label for="Campo_nome">Nome:</label> # O label é para nomear algo, e o for (para) colocamos o ID de algo para que quando clicamos em cima do "Nome" nós abrimos a caixa de texto do input.
+        <input id="Campo_nome" type="text" placeholder="Digite seu nome: "required> # O input serve para uma pergunta ou, para a pessoa escrever algo dentro da caixa de texto, etc. O type fala que a pergunta vai ser do tipo texto, onde você escreve. O placeholder serve como uma marca d'água para mostrar para a pessoa oque ela tem que fazer na caixa de pergunta. Já o ID serve para reconhecer o input no label, por isso nós utilizamos o for no label.
+        # caso queira colocar outro basta repetir o processo.
+    
+    <hr><br>
+    <!--Formulário input tipo senha e email-->
+    
+        <label for="Senha">Senha:</label>
+        <input id=Senha type="password" placeholder="Digite sua senha: "required> # O type senha a diferença dele que ao invés de aparecer oque você está escrevendo, esse você não irá conseguir ver oque você está escrevendo.
+        <br><br>
+        <label for="email">Email:</label>
+        <input id=email type="email" placeholder="Digite seu email: "required> # O email ele faz que oque você escreva seja detectado com um email, e aparece até para salvar o login se você acertar o email. Esse "required" mostra que é necessário escrever algo nesse campo, se não fizer o site vai detectar e pedir para a pessoa colcoar algo dentro dele.
+        <br><br>
+        <!--Input tipo radio e checkbox-->
+        <h2>Animais de estimação</h2>
+        <input type="radio" id="dog" name="Cachorro" value="Cachorro"> # o type radio é para selecionar uma opção, já o name tem que colocar o mesmo para cada radio que você criar. O value serve para que quando o formulário for mandado mostre a opção que ele selecionou.
+        <label for="dog">Cachorro</label>
+        <br><br>
+        <hr>
+        <h2>Qual seu jogo favorito:</h2>
+        <label for="GTA6">Grand Theft Auto VI</label>
+        <input type="checkbox" name="item1" value="Grand Theft Auto" id="GTA6"> # Tipo o "radio" só que ele é multipla escolhas e o name tem que ser diferente entre um e outro!
+        <br><br>
+        <label for="RDR">Red Dead Redemption</label>
+        <input type="checkbox" name="item2" value="Red Dead Redemption" id="RDR">
+        
+        <!--Campo tipo select(não input)-->
+        <h2>Selecione uma cor:</h2>
+        <select name="Cores"> # Tem abertura e fechamento, o name serve para que quando for enviado o formulário apareça no arquivo responsável sobre oque era esse "select".
+            <option disabled selected value="">Selecione uma cor</option> # Esse serve para dizer oque a pessoa vai fazer, utilizando o disabled para que a pessoa não marque essa questão, e o value sem nada pois não tem como essa questão ser enviada para o formulário. E utilizamos o "selected" para ele aparecer antes que a pessoa abra a caixa de selecionar as coisas.
+            <option value="Azul">Azul</option> # Dentro do option sempre tem que ter o value, pois é ele quem vai ser enviado após término do formulário, oque ta escrito entre a abertura e fechamento é só para aparecer para a pessoa que está escolhendo.
+            <option value="Vermelho">Vermelho</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Verde">Verde</option>
+        </select>
+        <!--Campo textarea-->
+        <h2>Digite sua mensagem:</h2>
+        <textarea name="Texto legal" placeholder="Digite seu texto aqui:" rows="15" cols="55"></textarea> # o "textarea" cria uma area tipo o input só que ao invés de mensagens pequenas, ele serve para textos. O rows significa quantas linhas ele é aparente inicialmente, o cols serve para quantas colunas, para deixar ele maior horizontalmente.
+        <br><br><hr>
+        <input type="submit" value="Enviar formulário"> # O submit serve para enviar o formulário ele cria um botão, ja o value vai colocar um texto dentro do botão do value.
+        <!--tag button-->
+        <br><br>
+        
+    </form>
+    <button>Clique aqui</button> # É um botão onde você coloca funcionalidade nele. E ele pode ficar dentro do formulário também.
+</body>
+</html>
